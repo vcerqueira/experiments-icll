@@ -4,11 +4,11 @@ from imblearn.over_sampling import SMOTE, ADASYN, RandomOverSampler
 from imblearn.under_sampling import NearMiss, OneSidedSelection, RandomUnderSampler
 from imblearn.ensemble import BalancedRandomForestClassifier
 
-from methods.icll import ICLL, NoGreyZoneError
-from methods.cure import CureModel
-from methods.benchmarks import VanillaClassifier, ResampledClassifier
-from methods.data_reader import read_data_set, prepare_fold
-from methods.metric import AUC
+from src.icll import ICLL, NoGreyZoneError
+from src.cure import CureModel
+from src.benchmarks import VanillaClassifier, ResampledClassifier
+from src.data_reader import read_data_set, prepare_fold
+from src.metric import AUC
 
 from config import DATA_PATH, MODELS, MODEL_PARAMETERS, DATA_DIR
 
